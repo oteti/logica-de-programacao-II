@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+
+<script>
+
+  function pulaLinha() {
+    document.write ("<br>");
+  }
+  function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+  }
+  function sorteado(dificuldade) {
+    return Math.round(Math.random() * dificuldade);;
+  }
+  var dificuldade = parseInt(prompt("Escolha a dificuldade o numero de 0 ao que você colocar:"));
+  var chute = parseInt(prompt("Chute um numero de 0 a " + dificuldade + " : "));
+  var numerosorteado = sorteado(dificuldade);
+  if (chute == numerosorteado) {
+    mostra("Acertoumisaravi, o numero era "+ numerosorteado);
+  } else {
+    if (chute < numerosorteado) {
+      mostra("foi menor idiota");
+    } else {
+      mostra("foi maior burro");
+    }
+  }
+
+</script>
