@@ -30,16 +30,16 @@
     desenhaCirculo(x,y,10);
   }
 
-  setInterval(atualizaTela,20);
+  setInterval(atualizaTela,10);
 
   function leDoTeclado(evento) {
-    if (evento.KeyCode == esquerda) {
+    if(evento.keyCode == cima) {
     x = x - taxa;
-    } else if(evento.KeyCode == direita){
+  } else if(evento.keyCode == direita) {
       x = x + taxa;
-    } else if (evento.KeyCode == cima) {
+    } else if(evento.keyCode == cima) {
       y = y - taxa;
-    } else if(evento.KeyCode == baixo){
+    } else if(evento.keyCode == baixo) {
       y = y + taxa;
     }
   }
